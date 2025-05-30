@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@color/cardview_dark_background">
+
+    <!-- Teks Judul -->
+    <TextView
+        android:id="@+id/tvOtpTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Enter OTP"
+        android:textSize="50sp"
+        android:layout_marginBottom="25dp"/>
+
+    <!-- EditText untuk OTP -->
+    <EditText
+        android:id="@+id/etOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Enter OTP"
+        android:textColorHint="@android:color/white"
+        android:inputType="number"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:background="@android:color/darker_gray"
+        android:maxLength="6" />
+
+    <!-- Tombol Verifikasi OTP -->
+    <Button
+        android:id="@+id/btnVerifyOtp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Tautan untuk Resend OTP -->
+    <TextView
+        android:id="@+id/tvResendOtp"
+        android:layout_marginTop="-30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/tvOtpError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error !"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>

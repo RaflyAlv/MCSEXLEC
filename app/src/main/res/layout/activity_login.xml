@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:gravity="center"
+    android:background="@color/cardview_dark_background">
+
+    <!-- Teks Judul -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShabyMovie"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- EditText untuk Nomor Telepon -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Phone Number"
+        android:textColorHint="@android:color/white"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- EditText untuk Password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Password"
+        android:textColorHint="@android:color/white"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- Tombol Login -->
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/background_dark"
+        android:textSize="18sp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Tautan untuk Create Account -->
+    <TextView
+        android:id="@+id/tvRegisterLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didn’t have an account? Register here!"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:padding="16dp"/>
+
+    <!-- Error Message -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error !"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+</LinearLayout>
