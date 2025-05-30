@@ -43,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
 
             // Perform validation
             if (phoneNumber.isEmpty()) {
-                showError("Phone number must be filled!")
+                showError("Username must be filled!")
             } else if (password.isEmpty()) {
                 showError("Password must be filled!")
             } else {

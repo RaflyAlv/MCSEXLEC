@@ -44,33 +44,12 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             )
         """
 
-        // Create Films Table
-        val CREATE_FILMS_TABLE = """
-            CREATE TABLE $TABLE_FILMS (
-                $KEY_FILM_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                $KEY_FILM_TITLE TEXT NOT NULL,
-                $KEY_FILM_DESCRIPTION TEXT,
-                $KEY_FILM_IMAGE TEXT,
-                $KEY_FILM_PRICE INTEGER
-            )
+
         """
 
-        // Create Transactions Table
-        val CREATE_TRANSACTIONS_TABLE = """
-            CREATE TABLE $TABLE_TRANSACTIONS (
-                $KEY_TRANSACTION_ID INTEGER PRIMARY KEY AUTOINCREMENT,
-                $KEY_USER_ID_FK INTEGER,
-                $KEY_FILM_ID_FK INTEGER,
-                $KEY_QUANTITY INTEGER,
-                FOREIGN KEY ($KEY_USER_ID_FK) REFERENCES $TABLE_USERS($KEY_USER_ID),
-                FOREIGN KEY ($KEY_FILM_ID_FK) REFERENCES $TABLE_FILMS($KEY_FILM_ID)
-            )
+       
         """
 
-        // Execute the queries
-        db?.execSQL(CREATE_USERS_TABLE)
-        db?.execSQL(CREATE_FILMS_TABLE)
-        db?.execSQL(CREATE_TRANSACTIONS_TABLE)
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
