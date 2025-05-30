@@ -6,16 +6,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
     tools:context=".HomePage">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvGameList"
-        android:padding="20dp"
-        android:layout_marginTop="20dp"
-        tools:listitem="@layout/list_item_game"
+
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:background="#F4F3F1"
+        android:text="Berita Indonesia"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="20dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNewsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        tools:layout_editor_absoluteY="64dp"
+        tools:listitem="@layout/list_item_news" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
